@@ -58,15 +58,3 @@ function formatThousandSep(input) {
 }
 
 console.log(formatThousandSep(2004500));
-
-// 优化遍历数组，去掉重复元素
-function unique(array) {
-	var arr = [];
-	for (var i = 0, len = array.length; i < len; i++) {
-		for (var j = i + 1; j < len; j++) {
-			if (array[i] === array[j]) j = ++i;
-			arr.push(array[i]);
-		}
-	}
-	retuan arr;
-}
